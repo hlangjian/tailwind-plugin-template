@@ -1,0 +1,14 @@
+@layer components {
+  .btn {
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    color: white;
+    transition: all 200ms;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
