@@ -40,7 +40,7 @@ function get(json, layer) {
   } else if (typeof json[layer] === "object") {
     result = json[layer];
   }
-  return JSON.stringify(result, null, 4);
+  return result ? JSON.stringify(result, null, 4): "{}";
 }
 
 main();
