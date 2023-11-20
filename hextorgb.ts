@@ -9,6 +9,8 @@ export const modifyHex = (hex: string) => {
 };
 
 export const hexToRgb = (hex: string) => {
+    if(!hex) return null
+    
     let x = [];
     hex = hex.replace("#", "");
     if (hex.length !== 6) {
